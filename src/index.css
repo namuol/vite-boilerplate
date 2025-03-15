@@ -8,7 +8,8 @@ html {
   html {
     filter: invert() contrast(80%) hue-rotate(180deg);
   }
-  img {
+  img,
+  canvas {
     filter: invert() contrast(120%) hue-rotate(180deg);
   }
 }
