@@ -1,14 +1,7 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import type {LC, LiveElement, PropsWithChildren} from '@use-gpu/live';
 import type {Lazy, OffscreenTarget} from '@use-gpu/core';
 
-import React, {
-  Gather,
-  useMemo,
-  useOne,
-  useRef,
-  useVersion,
-} from '@use-gpu/live';
+import {Gather, useMemo, useOne, useRef, useVersion} from '@use-gpu/live';
 import {seq} from '@use-gpu/core';
 import {vec3} from 'gl-matrix';
 
@@ -118,6 +111,7 @@ export const RTTAccumulatePage: LC = () => {
                   then={(frame: Lazy<number>) => (
                     <Pass>
                       <FullScreen
+                        // eslint-disable-next-line react-hooks/rules-of-hooks
                         shader={useShader(compositeShader, [
                           feedbackTarget.source,
                           frame,
