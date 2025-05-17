@@ -20,6 +20,17 @@
     "@headlessui/react": "^2.1.8",
     "@heroicons/react": "^2.1.5",
     "@tailwindcss/forms": "^0.5.9",
+    "@use-gpu/inspect": "^0.14.0",
+    "@use-gpu/inspect-gpu": "^0.14.0",
+    "@use-gpu/layout": "^0.14.0",
+    "@use-gpu/live": "^0.14.0",
+    "@use-gpu/parse": "^0.14.0",
+    "@use-gpu/react": "^0.14.0",
+    "@use-gpu/shader": "^0.14.0",
+    "@use-gpu/traits": "^0.14.0",
+    "@use-gpu/webgpu": "^0.14.0",
+    "@use-gpu/wgsl-loader": "^0.14.0",
+    "@use-gpu/workbench": "^0.14.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -29,6 +40,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
+    "@webgpu/types": "^0.1.60",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
@@ -41,6 +53,8 @@
     "tailwindcss": "^3.4.12",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vite-plugin-top-level-await": "^1.5.0",
+    "vite-plugin-wasm": "^3.4.1"
   }
 }
