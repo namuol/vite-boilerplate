@@ -34,6 +34,9 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
+  "overrides": {
+    "@lezer/common": "1.1.0"
+  },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@rollup/pluginutils": "^5.1.4",
