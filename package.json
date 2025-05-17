@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@rollup/pluginutils": "^5.1.4",
     "@stkb/rewrap": "^0.1.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
