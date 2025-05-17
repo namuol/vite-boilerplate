@@ -1,4 +1,4 @@
-import React, {type LC, type PropsWithChildren} from '@use-gpu/live';
+import {type LC, type PropsWithChildren} from '@use-gpu/live';
 
 import {HTML} from '@use-gpu/react';
 import {TextureSource} from '@use-gpu/core';
