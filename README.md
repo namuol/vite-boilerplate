@@ -10,4 +10,4 @@ Note the `overrides` section of package.json. I was getting typescript errors
 that suggested conflicting versions of `@lezer/common`, and indeed package-lock
 showed two versions (1.0.0 and 1.1.0).
 
-Explicitly overriding to use `1.1.0` fixed these issues.
+Explicitly overriding to use `1.0.0` fixed these issues.
