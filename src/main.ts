@@ -1,4 +1,6 @@
-import shaders from './shaders.slang';
+import shaders, {reflection} from './shaders.slang';
+
+console.log({shaders, reflection});
 
 async function init() {
   if (!navigator.gpu) {
