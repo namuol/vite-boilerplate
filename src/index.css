@@ -1,3 +1,9 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
 /* Yes, I am lazy */
 @media (prefers-color-scheme: dark) {
   html {

@@ -16,10 +16,11 @@
       "prettier --write --ignore-unknown"
     ]
   },
-  "dependencies": {},
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@namuol/vite-plugin-slang": "github:namuol/vite-plugin-slang",
     "@stkb/rewrap": "^0.1.0",
+    "@webgpu/types": "^0.1.60",
     "eslint": "^9.9.0",
     "globals": "^15.9.0",
     "husky": "^9.0.11",
