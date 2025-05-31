@@ -12,15 +12,16 @@
   },
   "lint-staged": {
     "**/*.{ts,tsx,json,css,md}": [
+      "eslint . --fix",
       "rewrap -i",
       "prettier --write --ignore-unknown"
     ]
   },
-  "dependencies": {},
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@stkb/rewrap": "^0.1.0",
     "eslint": "^9.9.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^15.9.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
