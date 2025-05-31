@@ -1,7 +1,8 @@
-import * as THREE from 'three';
 import Stats from 'stats.js';
-import vertexShader from './shaders/vertex-shader.glsl';
+import * as THREE from 'three';
+
 import fragmentShader from './shaders/fragment-shader.glsl';
+import vertexShader from './shaders/vertex-shader.glsl';
 
 class App {
   threejs_: THREE.WebGLRenderer | undefined;
