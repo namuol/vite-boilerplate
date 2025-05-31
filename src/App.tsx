@@ -1,16 +1,14 @@
-import {type LC} from '@use-gpu/live';
+import '@use-gpu/inspect/theme.css';
 
+import {UseInspect} from '@use-gpu/inspect';
+import {inspectGPU} from '@use-gpu/inspect-gpu';
+import {type LC} from '@use-gpu/live';
 import {HTML} from '@use-gpu/react';
 import {AutoCanvas, WebGPU} from '@use-gpu/webgpu';
 import {DebugProvider} from '@use-gpu/workbench';
 
-import {UseInspect} from '@use-gpu/inspect';
-import {inspectGPU} from '@use-gpu/inspect-gpu';
-import '@use-gpu/inspect/theme.css';
-
-import {makeFallback} from './Fallback';
-
 import {RTTAccumulatePage} from './accumulate';
+import {makeFallback} from './Fallback';
 
 export const App: LC = () => {
   const root = document.querySelector('#use-gpu')!;

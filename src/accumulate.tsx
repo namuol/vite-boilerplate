@@ -1,35 +1,32 @@
-import type {LC, LiveElement, PropsWithChildren} from '@use-gpu/live';
 import type {Lazy, OffscreenTarget} from '@use-gpu/core';
-
-import {Gather, useMemo, useOne, useRef, useVersion} from '@use-gpu/live';
 import {seq} from '@use-gpu/core';
-import {vec3} from 'gl-matrix';
-
+import type {LC, LiveElement, PropsWithChildren} from '@use-gpu/live';
+import {Gather, useMemo, useOne, useRef, useVersion} from '@use-gpu/live';
 import {
-  Loop,
-  Pass,
-  OrbitControls,
-  OrbitCamera,
-  Cursor,
-  LinearRGB,
-  FullScreen,
-  RenderTarget,
   AccumulateRender,
+  Cursor,
+  FullScreen,
+  LinearRGB,
+  Loop,
+  On,
+  OrbitCamera,
+  OrbitControls,
+  Pass,
   PrintHelper,
   PrintLayer,
+  RenderTarget,
   ShaderPrinter,
-  On,
-  useMouse,
   useKeyboard,
+  useMouse,
   usePerFrame,
+  useRawSource,
   useShader,
   useShaderRef,
-  useRawSource,
   useViewContext,
 } from '@use-gpu/workbench';
+import {vec3} from 'gl-matrix';
 
 // import { InfoBox } from '../../ui/info-box';
-
 import {accumulateShader} from './accumulate/accumulate.wgsl';
 import {compositeShader} from './accumulate/composite.wgsl';
 

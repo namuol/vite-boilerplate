@@ -1,27 +1,23 @@
-import globals from 'globals';
-import pluginJs from '@eslint/js';
-import tseslint from 'typescript-eslint';
-import reactHooks from 'eslint-plugin-react-hooks';
+// @ts-check
 
-export default [
-  {files: ['**/*.{js,mjs,cjs,ts}']},
-  {languageOptions: {globals: globals.browser}},
-  pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
+import eslint from '@eslint/js';
+import reactHooks from 'eslint-plugin-react-hooks';
+import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort';
+import tseslint from 'typescript-eslint';
+
+export default tseslint.config(
+  eslint.configs.recommended,
+  tseslint.configs.recommended,
+  {ignores: ['dist']},
   {
     plugins: {
+      'simple-import-sort': simpleImportSortPlugin,
       'react-hooks': reactHooks,
     },
     rules: {
-      '@typescript-eslint/no-unused-vars': [
-        'error',
-        {
-          argsIgnorePattern: '^_',
-          varsIgnorePattern: '^_',
-        },
-      ],
+      'simple-import-sort/imports': 'warn',
+      'simple-import-sort/exports': 'warn',
       'react-hooks/rules-of-hooks': 'error',
-      'react-hooks/exhaustive-deps': 'error',
     },
   },
-];
+);
