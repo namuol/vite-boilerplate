@@ -1,12 +1,24 @@
 {
   "name": "vite-namuol-boilerplate",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vite-boilerplate.umd.cjs",
+  "module": "./dist/vite-boilerplate.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-boilerplate.js",
+      "require": "./dist/vite-boilerplate.umd.cjs"
+    },
+    "./style.css": "./dist/vite-boilerplate.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "test": "vitest run",
     "preview": "vite preview",
     "prepare": "husky"
   },
@@ -28,6 +40,7 @@
     "prettier": "3.3.2",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vitest": "^3.2.4"
   }
 }

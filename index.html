@@ -1,16 +1,32 @@
 <!doctype html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/src/index.css" />
-  <title>Vite + TS</title>
+  <title>Vite Boilerplate Library Demo</title>
 </head>
 
 <body>
+  <div id="app">
+    <h1>Vite Boilerplate Library Demo</h1>
+    <p>Open the console to test the library functions:</p>
+    <ul>
+      <li><code>double(5)</code> → <span id="double-result"></span></li>
+      <li><code>triple(5)</code> → <span id="triple-result"></span></li>
+      <li><code>quadruple(5)</code> → <span id="quadruple-result"></span></li>
+    </ul>
+  </div>
   <script type="module" src="/src/main.ts"></script>
+  <script>
+    // Demo the library functions
+    import { double, triple, quadruple } from '/src/main.ts';
+
+    document.getElementById('double-result').textContent = double(5);
+    document.getElementById('triple-result').textContent = triple(5);
+    document.getElementById('quadruple-result').textContent = quadruple(5);
+  </script>
 </body>
 
 </html>
