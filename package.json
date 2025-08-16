@@ -20,6 +20,7 @@
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@stkb/rewrap": "^0.1.0",
+    "@webgpu/types": "^0.1.64",
     "eslint": "^9.9.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^15.9.0",
@@ -28,6 +29,7 @@
     "prettier": "3.3.2",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vite-plugin-glsl": "^1.5.1"
   }
 }
